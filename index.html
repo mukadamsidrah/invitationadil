@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f8f2e8" />
+  <title>Adil &amp; Zoha | Nikah Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Alex+Brush&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--ivory:#f1f5eb;--paper:#fffaf2;--champagne:#d9c5a5;--gold:#b08d57;--burgundy:#713b43;--ink:#59483d;--muted:#8c7b6b}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--ivory);color:var(--ink);font-family:Montserrat, sans-serif;font-weight:300}
+    button,a{font:inherit}
+    .intro{min-height:100svh;display:grid;place-items:center;padding:28px 18px;overflow:hidden;background:radial-gradient(ellipse at 50% 25%,#fffdf8 0, var(--ivory) 65%)}
+    .intro-inner{width:min(100%,560px);text-align:center}
+    .eyebrow{font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;color:var(--brown)}
+    h1,h2,.names{font-family:'Cormorant Garamond',serif;font-weight:400}
+    .intro h1{font-size:clamp(2.2rem,8vw,4rem);line-height:1.05;margin:12px 0 7px}
+    .intro-copy{font-size:.78rem;letter-spacing:.1em;color:var(--muted);margin-bottom:34px}
+    .envelope {box-shadow:0 12px 25px rgba(0, 0, 0, 0.30),0 4px 8px rgba(0, 0, 0, 0.08);}
+    .envelope {
+  background: linear-gradient(
+    145deg,
+    #fffaf0,
+    #f0e3cf
+  );
+
+  border: 1px solid rgba(120, 90, 60, 0.15);
+
+  box-shadow:
+    0 18px 30px rgba(70, 45, 25, 0.16),
+    0 5px 10px rgba(70, 45, 25, 0.10),
+    inset 0 1px 2px rgba(255, 255, 255, 0.8);}
+    .envelope {
+  transform: perspective(1000px) rotateX(3deg);
+  transform-style: preserve-3d;
+}
+
+    .envelope-wrap{perspective:1000px;width:min(88vw,380px);height:255px;margin:0 auto 24px;position:relative;filter:drop-shadow(0 18px 22px #8b72501c)}
+    .envelope{position:absolute;inset:32px 0 0;background:#e7d7bd;border:1px solid #cbb58f;border-radius:3px;overflow:visible}
+    .envelope::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#efe3cf,#d8c3a2);clip-path:polygon(0 0,50% 57%,100% 0,100% 100%,0 100%);z-index:3}
+    .envelope::after{content:"";position:absolute;inset:0;background:linear-gradient(45deg,#dfc9a9,#f1e5d2);clip-path:polygon(0 100%,50% 48%,100% 100%);z-index:4}
+    .letter{position:absolute;z-index:2;left:8%;width:84%;height:190px;bottom:18px;background:var(--paper);border:1px solid #e6d8c1;padding:23px 12px;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:transform 1.15s cubic-bezier(.2,.75,.2,1),bottom 1.15s cubic-bezier(.2,.75,.2,1);}
+    .letter small{font-size:.55rem;letter-spacing:.22em;color:var(--gold);text-transform:uppercase}
+    .letter .mini-names{font-family:'Alex Brush',cursive;font-size:2.2rem;color:var(--burgundy);margin:9px 0 4px}
+    .letter .mini-date{font-size:.58rem;letter-spacing:.15em}
+    .flap {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 58%;
+
+  background:
+    linear-gradient(
+      155deg,
+      rgba(255, 250, 239, 0.95) 0%,
+      rgba(239, 224, 201, 0.98) 45%,
+      rgba(205, 180, 145, 0.95) 100%
+    );
+
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform-origin: top center;
+
+  filter: drop-shadow(0 3px 3px rgba(91, 65, 39, 0.12));
+
+  transition: transform 0.85s ease;
+  backface-visibility: hidden;}
+  .flap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.32),
+    transparent 25%,
+    transparent 78%,
+    rgba(112, 76, 42, 0.10)
+  );
+
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+    .seal {
+  position: absolute;
+  z-index: 7;
+  left: 50%;
+  top: 52%;
+  transform: translate(-50%, -50%);
+
+  width: 90px;
+  height: 80px;
+  border-radius: 48% 52% 50% 46% / 52% 47% 53% 48%;
+
+  display: grid;
+  place-items: center;
+
+  color: #ead6b0;
+  background: radial-gradient(
+    ellipse at 32% 25%,
+    #a75b66 0%,
+    #813542 38%,
+    #702838 68%,
+    #481722 100%
+  );
+
+  border: 1px solid rgba(190, 133, 133, 0.65);
+
+  box-shadow:
+    0 7px 12px rgba(54, 24, 26, 0.28),
+    0 2px 3px rgba(54, 24, 26, 0.2),
+    inset 0 2px 3px rgba(255, 220, 220, 0.28),
+    inset 0 -4px 6px rgba(35, 5, 12, 0.4);
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  line-height: 1;
+
+  transition: opacity 0.35s, transform 0.5s;
+}
+    .open .flap{transform:rotateX(180deg);z-index:1}
+    .open .seal{opacity:0;transform:translate(-50%,-50%) scale(.70)}
+    .open .letter{transform:translateY(-145px);bottom:10px;z-index:6}
+    .open .envelope{overflow:visible}
+    .open .envelope::before{z-index:3}
+    .open .envelope::after{z-index:4}
+    .open-hint{border:1px solid var(--gold);background:transparent;color:var(--ink);padding:13px 22px;border-radius:99px;letter-spacing:.12em;text-transform:uppercase;font-size:.65rem;cursor:pointer;transition:background .25s,color .25s}
+    .open-hint:hover{background:var(--gold);color:white}
+    .tiny-note{font-size:.65rem;color:var(--muted);margin-top:13px}
+    #invitation{display:none;opacity:0}
+    #invitation.visible{display:block;animation:fadeUp 1s ease forwards}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    .section{padding:76px 20px;text-align:center}
+    .closing-section {background-color: #dfc3a6;}
+    .hero{min-height:90svh;display:grid;place-items:center;position:relative;background:linear-gradient(#f8f2e8e8,#f8f2e8ee),radial-gradient(ellipse at 50% 20%,#fff,#eadcc6)}
+    .frame{border:1px solid var(--champagne);outline:1px solid #d9c5a55c;outline-offset:7px;width:min(100%,650px);padding:55px 22px;position:relative}
+    .frame:before,.frame:after{content:"✦";position:absolute;color:var(--gold);font-size:1.1rem;background:var(--ivory);padding:5px;left:50%;transform:translateX(-50%)}
+    .frame:before{top:-15px}.frame:after{bottom:-15px}
+    .names{font-family:'Alex Brush',cursive;font-size:clamp(3.3rem,12vw,6.2rem);line-height:1.12;color:var(--burgundy);margin:22px 0 12px}
+    .ampersand{font-family:'Cormorant Garamond',serif;color:var(--gold);font-size:1.8rem;font-style:italic}
+    .hero-date{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;margin-top:24px}
+    .ornament{color:var(--gold);letter-spacing:.5em;margin:22px 0}
+    h2{font-size:clamp(2rem,7vw,3rem);margin:12px 0;color:var(--burgundy)}
+    .body-copy{max-width:540px;margin:0 auto;line-height:1.9;font-size:.88rem;color:#79695b}
+    .details{background:#efe5d5}
+    .event-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:850px;margin:32px auto 0}
+    .event{border:1px solid #d5c1a1;padding:25px 12px;background:#f8f2e8a6}
+    .event .symbol{font-size:1.35rem;color:var(--gold)}
+    .event h3{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:500;margin:10px 0}
+    .event p{font-size:.72rem;line-height:1.8;margin:0;color:var(--muted)}
+    .bismillah{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,5vw,2.1rem);color:var(--burgundy);margin:0 0 8px;line-height:1.6}
+    .translation{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.9rem;color:var(--muted);margin:0 auto 22px}
+    .family-line{font-family:'Cormorant Garamond',serif;font-size:1rem;line-height:1.65;margin:8px auto;color:var(--ink)}
+    .weds{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--gold);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.35rem;margin:8px 0}
+    .weds:before,.weds:after{content:'';height:1px;width:clamp(25px,9vw,70px);background:var(--champagne)}
+    .parent-label{font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+    .parent-names{font-family:'Cormorant Garamond',serif;font-size:1rem;line-height:1.6;margin:3px auto 12px}
+    .nikah-panel{max-width:520px;margin:28px auto 0;border:1px solid var(--champagne);padding:22px 16px;background:#fffaf280}
+    .nikah-panel h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:500;color:var(--burgundy);margin:0 0 10px}
+    .nikah-panel p{font-size:.8rem;line-height:1.9;margin:0;color:var(--muted)}
+    .edit-note{font-size:.68rem;color:var(--muted);margin-top:18px}
+    .actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:25px}
+    .btn{display:inline-block;text-decoration:none;padding:13px 19px;border:1px solid var(--gold);color:var(--ink);font-size:.67rem;letter-spacing:.1em;text-transform:uppercase}
+    .closing-section .btn {
+background-color: #713B43;
+color: #FFF8EF;
+border-color: #713B43;
+transition: background-color 0.3s ease;
+}
+
+.closing-section .btn:hover {
+background-color: #8A4B55;
+border-color: #8A4B55;
+}
+    .btn.primary{background:var(--burgundy);border-color:var(--burgundy);color:#fff8ef}
+    footer{text-align:center;padding:28px 18px 40px;font-size:.65rem;color:var(--muted);letter-spacing:.12em}
+    @media(max-width:560px){.event-grid{grid-template-columns:1fr;max-width:330px}.event{padding:20px}.section{padding:60px 18px}.envelope-wrap{height:235px}.open .letter{transform:translateY(-125px)}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+  <main>
+    <section class="intro" id="cover" aria-label="Wedding invitation envelope">
+      <div class="intro-inner">
+        <div class="eyebrow">A little note of love</div>
+        <h1>You're invited</h1>
+        <p class="intro-copy">A celebration of two hearts becoming one</p>
+        <div class="envelope-wrap" id="envelopeWrap">
+          <div class="envelope" id="envelope">
+            <div class="letter">
+              <small>With the blessings of Allah</small>
+              <div class="mini-names">Adil & Zoha</div>
+              <div class="mini-date">06 · 12 · 2026</div>
+            </div>
+            <div class="flap"></div>
+            <div class="seal" aria-hidden="true">A<span style="font-size:.7em">&</span>Z</div>
+          </div>
+        </div>
+        <button class="open-hint" id="openButton" aria-expanded="false" aria-controls="invitation">Tap the envelope to open the invitation ✦</button>
+      
+      </div>
+    </section>
+
+    <div id="invitation">
+      <section class="section hero">
+        <div class="frame">
+          <div class="bismillah" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+          <b>
+          <p class="translation">In the name of Allah, the Most Gracious, the Most Merciful</p>
+          <div class="eyebrow">With the blessings of Allah</div>
+          <p class="body-copy" style="margin-top:12px">We joyfully invite you to the Nikah ceremony of</p>
+          <div class="names" style="margin-bottom:0">Adil</div>
+          <div class="parent-label">Son of</div>
+          <div class="parent-names">Mr.Feroz & Mrs.Afroza Rumani</div>
+          <div class="weds">Weds</div>
+          <div class="names" style="margin:0">Zoha</div>
+          <div class="parent-label">Daughter of</div>
+          <div class="parent-names">Mr.Khalil & Mrs.Shabana Antule</div>
+          <div class="ornament">✦ ✦ ✦</div>
+          <p class="body-copy">Request the honour of your presence and blessings on their special day.</p>
+          </b>
+          <div class="hero-date">Sunday · 6 December 2026</div>
+        
+          <div class="nikah-panel">
+            <h3>Nikah Ceremony</h3>
+            <p><b><strong>Date:</b> Sunday, 6 December 2026</strong><br><b><strong>Time:</b>After Namaz-E-Maghrib At Jama Masjid,PethMap</strong><br><b><strong>Reception Venue:</b>Sports Ground,PethMap,Chiplun</strong> <br><b><strong>Thereafter Dinner</b></strong></p>
+          
+          </div>
+        
+        </div>
+      </section>
+
+
+      <section class="section closing-section">
+        <div class="eyebrow">With love and duas</div>
+        <h2>We hope you can join us</h2>
+        <p class="body-copy">Your presence and blessings would mean a great deal to our families.</p>
+        <div class="actions">
+         
+          <a class="btn" href="https://www.google.com/maps/place/Mi+kokni+shooting+ball+ground/@17.5403151,73.5059123,17z/data=!4m6!3m5!1s0x3bc209e05e83e4ff:0xd3cffde591b24036!8m2!3d17.54031!4d73.5084872!16s%2Fg%2F11j8rlnxd2?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">View venue</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const openButton = document.getElementById('openButton');
+    const envelopeWrap = document.getElementById('envelopeWrap');
+    const envelope = document.getElementById('envelope');
+    
+    const invitation = document.getElementById('invitation');
+    let opened = false;
+    function openInvitation() {
+  if (opened) return;
+
+  opened = true;
+  envelopeWrap.classList.add('open');
+
+  openButton.textContent = 'Opening your invitation…';
+  openButton.setAttribute('aria-expanded', 'true');
+
+  // Let the letter slide out first.
+  setTimeout(() => {
+    // Give guests 5 seconds to read the letter.
+    setTimeout(() => {
+      invitation.classList.add('visible');
+      openButton.textContent = 'Invitation opened ✦';
+
+      setTimeout(() => {
+        invitation.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 300);
+    }, 2000);
+  }, 1200);
+}
+
+// Clicking anywhere on the envelope opens it.
+envelope.addEventListener('click', openInvitation);
+
+// The button underneath works too.
+openButton.addEventListener('click', openInvitation);
+
+  </script>
+</body>
+</html>
